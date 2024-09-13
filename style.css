@@ -632,6 +632,11 @@ h2 {
 h3 {
 	font-size: 23px;
 }
+
+.navbar {
+    display: none;
+}
+	
 .section-padding {
 	padding: 40px 0px;
 }
