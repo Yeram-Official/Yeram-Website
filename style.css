@@ -83,6 +83,8 @@
   --textColorDark: #333;
   --background: #ffffff;
   --backgroundLight: #e2e2e2;
+  --navbarColor: #7001FF;
+  --navActive: #0211FF;
   
 }
 
@@ -99,10 +101,10 @@ body {
 	background-color: var(--background);
 }
 a {
-	color:#5f0099;
+	color:var(--navActive);
 }
 a:hover {
-	color:#5f0099;
+	color:var(--navActive);
 }
 h1, h2, h3 {
 	font-weight: 700;
@@ -133,7 +135,7 @@ h6 {
 	z-index: 1030;
 }
 .navbar .active {
-	color: #5f0099 !important;
+	color: var(--navActive) !important;
 }
 .navbar .navbar-brand {
 }
@@ -148,7 +150,7 @@ h6 {
 	font-size: 13px;
 }
 .navbar .nav-item a:hover {
-	color: #5f0099;
+	color: var(--navActive);
 }
 .navbar .nav-link {
 	position: relative;
@@ -164,8 +166,8 @@ h6 {
 	display: none;
 }
 .nav-scroll {
-	background: var(--background);
-	color: var(--textColorLight);
+	background: linear-gradient(45deg, var(--backgroundLight), var(--navbarColor));/*var(--navbarColor);*/
+	color: white;/*var(--textColorLight);*/
 	-webkit-box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.0509803922);
 	box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.0509803922);
 	-webkit-transition: all .4s ease;
@@ -441,7 +443,9 @@ h6 {
 	background: url(images/arrow-left.png) no-repeat !important;
 	background-size: auto auto !important;
 	background-size: 100% 100% !important;
+	background-color: var(--background);
 }
+
 .bx-next {
 	right: -90px !important;
 	background: url(images/arrow-right.png) no-repeat !important;
@@ -611,7 +615,8 @@ input {
 	background:  rgb(213, 198, 221);
 	color: #fff !important;
 	text-align: center;
-	padding: 10px 0;
+	padding: 50px 0;
+	height: 200px;
 }
     .responsive-element {
         display: block; /* Show in responsive mode */
@@ -626,6 +631,10 @@ input {
 .nav-scroll .navbar-collapse {
 	background: rgba(255, 255, 255, 0); 
 }
+.banner {
+	text-align: center;
+}
+
 #contact_form {
 	margin-bottom:20px;
 }
@@ -635,6 +644,12 @@ input {
 	transform: scale(0.75) !important;
 	-webkit-transform: scale(0.75) !important;
 }
+
+.nav-scroll {
+	height: 80px;
+
+}
+
 .banner-text {
 	padding-right: 0px;
 	margin: 10px 0px 0px;

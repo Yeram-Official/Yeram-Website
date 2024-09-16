@@ -14,14 +14,16 @@ const updateBackgroundColor = () => {
 			document.documentElement.style.setProperty('--textColor', '#FFFFFF');
 			document.documentElement.style.setProperty('--textColorLight', '#B0B0B0');
 			document.documentElement.style.setProperty('--textColorDark', '#E0E0E0');
-			document.documentElement.style.setProperty('--background', '#121212');
+			document.documentElement.style.setProperty('--background', '#001F3F');
 			document.documentElement.style.setProperty('--backgroundLight', '#1F1F1F');
+			document.documentElement.style.setProperty('--navbarColor', '#7001FF');
 		} else {
 			document.documentElement.style.setProperty('--textColor', '#000000');
 			document.documentElement.style.setProperty('--textColorLight', '#818992');
 			document.documentElement.style.setProperty('--textColorDark', '#333');
 			document.documentElement.style.setProperty('--background', '#ffffff');
 			document.documentElement.style.setProperty('--backgroundLight', '#e2e2e2');
+			document.documentElement.style.setProperty('--navbarColor', '#7001FF');
 		}
 	}
 	else {
@@ -29,14 +31,16 @@ const updateBackgroundColor = () => {
 			document.documentElement.style.setProperty('--textColor', '#FFFFFF');
 			document.documentElement.style.setProperty('--textColorLight', '#B0B0B0');
 			document.documentElement.style.setProperty('--textColorDark', '#E0E0E0');
-			document.documentElement.style.setProperty('--background', '#121212');
+			document.documentElement.style.setProperty('--background', '#001F3F');
 			document.documentElement.style.setProperty('--backgroundLight', '#1F1F1F');
+			document.documentElement.style.setProperty('--navbarColor', '#7001FF');
 		} else {
 			document.documentElement.style.setProperty('--textColor', '#000000');
 			document.documentElement.style.setProperty('--textColorLight', '#818992');
 			document.documentElement.style.setProperty('--textColorDark', '#333');
 			document.documentElement.style.setProperty('--background', '#ffffff');
 			document.documentElement.style.setProperty('--backgroundLight', '#e2e2e2');
+			document.documentElement.style.setProperty('--navbarColor', '#7001FF');
 		}
 	}
 };
