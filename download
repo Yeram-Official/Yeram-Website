@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device Redirect</title>
+  <script type="text/javascript">
+    window.onload = function() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Redirect to Play Store if Android device
+      if (/android/i.test(userAgent)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.yeram.yeram";
+      }
+      // Redirect to App Store if iPhone/iPad/iOS device
+      else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location.href = "https://apps.apple.com/us/app/yeram-armenian-diaspora/id1618603992";
+      }
+      // Redirect to a default site if neither
+      else {
+        window.location.href = "https://yeram.info/";
+      }
+    };
+  </script>
+</head>
+<body>
+  <h1>Redirecting you to the appropriate store...</h1>
+</body>
+</html>
